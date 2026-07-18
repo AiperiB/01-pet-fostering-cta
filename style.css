@@ -1,0 +1,851 @@
+/* Import a modern, easy-to-read font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* Reset box sizing for consistent layout structure */
+.cta-banner *, 
+.cta-banner *::before, 
+.cta-banner *::after {
+  box-sizing: border-box;
+}
+
+/* Main tall, visually striking banner section */
+.cta-banner {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; /* Ensures a tall, prominent display */
+  padding: 60px 20px;
+  /* Nature-inspired gradient using deep blue to calming teal */
+  background: linear-gradient(135deg, #0f3057 0%, #006c84 100%), #1687a7;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Centered content container with a readable max-width */
+.cta-container {
+  max-width: 800px;
+  width: 100%;
+}
+
+/* Large main action-driven heading */
+.cta-heading {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: 0;
+  margin-bottom: 20px;
+  letter-spacing: -0.02em;
+}
+
+/* Explanatory description text focused on readability */
+.cta-description {
+  font-size: 1.25rem;
+  line-height: 1.6;
+  color: #e3fafc; /* Very light teal accent for clear contrast */
+  margin-bottom: 40px;
+}
+
+/* Bright, eye-catching call-to-action button link */
+.cta-button {
+  display: inline-block;
+  background-color: #00ffd1; /* Vibrant bright teal/cyan to stand out heavily against dark blue */
+  color: #0f3057; /* Deep blue text color for optimal contrast and accessibility */
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 16px 36px;
+  border-radius: 50px; /* Smooth rounded pill shape */
+  box-shadow: 0 4px 15px rgba(0, 255, 209, 0.3); /* Subtle matching glow effect */
+  transition: transform 0.2s ease, background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Interactive hover effects for the CTA button */
+.cta-button:hover {
+  background-color: #00e6bd; /* Slightly darker shade on hover */
+  transform: translateY(-2px); /* Gentle lift effect */
+  box-shadow: 0 6px 20px rgb(0, 255, 208);
+}
+
+/* Interactive active/click effects */
+.cta-button:active {
+  transform: translateY(0);
+}
+
+/* ==========================================
+   1. Main Banner Styles (Desktop / Default)
+   ========================================== */
+.cta-banner {
+  font-family: 'Inter', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh; /* Ensures a tall, prominent display */
+  padding: 60px 20px;
+  
+  /* Combined background image with a light nature-inspired gradient overlay */
+  background: linear-gradient(135deg, rgba(15, 48, 87, 0.65) 0%, rgba(0, 108, 132, 0.65) 100%), 
+              url('img/cta-bg.jpg') no-repeat center center;
+  background-size: cover; /* Ensures the image scales to cover the entire banner area */
+  
+  color: #ffffff;
+  text-align: center;
+}
+
+
+/* ==========================================
+   2. Responsive Styles (Mobile Overrides Only)
+   ========================================== */
+@media (max-width: 768px) {
+  .cta-banner {
+    min-height: 50vh;
+    padding: 40px 16px;
+  }
+  
+  .cta-heading {
+    font-size: 2.25rem;
+  }
+}
+  
+  .cta-heading {
+    font-size: 2.25rem;
+  }
+  
+  .cta-description {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+  }
+
+/* Simple site header placed above the banner */
+.main-header {
+  background-color: #0f3057; /* Uses the deep blue from the banner gradient for continuity */
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(151, 241, 224, 0.15); /* Subtle bright teal accent line */
+}
+
+/* Header container aligning content with the banner's boundaries */
+.header-container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+}
+
+/* Clean, modern logo style utilizing the bright teal palette accent */
+.logo {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #00ffd1; /* Bright teal/cyan accent color */
+  text-decoration: none;
+  letter-spacing: -0.01em;
+  transition: color 0.2s ease;
+}
+
+/* Light interaction states for the logo */
+.logo:hover {
+  color: #00e6bd;
+}
+
+/* Adjust header spacing on smaller screens */
+@media (max-width: 768px) {
+  .main-header {
+    padding: 15px 0;
+  }
+  
+  .header-container {
+    padding: 0 16px;
+  }
+}
+
+/* Container for the new information section below the banner */
+.info-section {
+  background-color: #ffffff; /* Clean white background for contrast against the dark banner */
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* Centered layout box ensuring both columns align evenly */
+.info-container {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  gap: 50px; /* Even spacing between the two columns */
+  align-items: center; /* Vertically centers the content within the columns */
+}
+
+/* Base style splitting the layout into two evenly sized columns */
+.info-column {
+  flex: 1;
+}
+
+/* Image styles ensuring responsiveness and a modern feel */
+.info-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 12px; /* Smooth rounded corners matching modern UI */
+  box-shadow: 0 8px 24px rgba(15, 48, 87, 0.1); /* Soft, subtle deep blue shadow */
+}
+
+/* Heading for the info section using the dark palette accent color */
+.info-heading {
+  font-family: 'Inter', sans-serif;
+  color: #0f3057;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+/* Clear, highly readable descriptive text block */
+.info-text {
+  font-family: 'Inter', sans-serif;
+  color: #4a5568; /* Balanced neutral gray color for body text readability */
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+/* Removes extra margin on the final paragraph */
+.info-text:last-child {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments to stack columns vertically on mobile devices */
+@media (max-width: 768px) {
+  .info-section {
+    padding: 50px 16px;
+  }
+  
+  .info-container {
+    flex-direction: column; /* Stacks image on top of text on smaller screens */
+    gap: 30px;
+  }
+  
+  .info-heading {
+    font-size: 1.75rem;
+  }
+}
+
+/* Container for the new events section */
+.events-section {
+  background-color: #f4f9f9; /* Soft, light teal tinted background to distinguish the section */
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Centered content box for titles and event layout grids */
+.events-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Centered section main header */
+.events-title {
+  color: #0f3057; /* Deep blue theme color */
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+/* Subtitle providing context for the event listings */
+.events-subtitle {
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin-bottom: 50px;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.5;
+}
+
+/* Two-column responsive layout container for events */
+.events-grid {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+/* Individual event container panel */
+.event-card {
+  flex: 1;
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(15, 48, 87, 0.05); /* Very light card shadow */
+  border-left: 5px solid #1687a7; /* Teal brand accent indicator strip */
+}
+
+/* Styled calendar block for visual entry date display */
+.event-date {
+  background-color: #0f3057;
+  color: #ffffff;
+  min-width: 70px;
+  height: 70px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Bold date day indicator text styling */
+.event-date .day {
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Date month text styling */
+.event-date .month {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-top: 2px;
+}
+
+/* Container arranging typography details inside the event cards */
+.event-details {
+  flex: 1;
+}
+
+/* Individual specific event name element style */
+.event-name {
+  color: #0f3057;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 6px 0;
+}
+
+/* Event tracking info detailing active timing intervals */
+.event-time {
+  color: #1687a7; /* Secondary theme teal color */
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+/* Plain geographic venue description container label */
+.event-location {
+  color: #718096;
+  font-size: 0.95rem;
+  margin: 0;
+}
+
+/* Responsive screen media adjustment handling column alignment states */
+@media (max-width: 768px) {
+  .events-section {
+    padding: 50px 16px;
+  }
+  
+  .events-subtitle {
+    margin-bottom: 35px;
+  }
+  
+  .events-grid {
+    flex-direction: column; /* Vertical card layout stack fallback structure on phone */
+    gap: 20px;
+  }
+}
+
+/* Container for the final contact and social media section */
+.contact-section {
+  background-color: #0f3057; /* Rich deep blue matching the header and banner theme */
+  color: #ffffff;
+  padding: 60px 20px;
+  font-family: 'Inter', sans-serif;
+  border-top: 2px solid rgba(0, 255, 209, 0.2); /* Teal divider strip accent */
+}
+
+/* Flexbox layout grouping contact and socials side-by-side */
+.contact-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 60px;
+}
+
+/* Individual layout column allocation splits */
+.contact-info, 
+.contact-social {
+  flex: 1;
+}
+
+/* Main section headings */
+.contact-heading, 
+.social-heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* Secondary header styling matching structural layout balances */
+.social-heading {
+  font-size: 1.5rem;
+  margin-bottom: 16px;
+}
+
+/* Clean, modern descriptive text with high contrast layout styling */
+.contact-subtext {
+  color: #e3fafc; /* Pale teal tint for excellent text readability */
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin-bottom: 24px;
+}
+
+/* Vertical wrapper block stacking personal data entry items */
+.contact-details {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Row display setting up icon alongside textual data pairs */
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 1.05rem;
+}
+
+/* Emphasized icon indicators styled using bright cyan highlights */
+.contact-icon {
+  color: #00ffd1;
+  font-size: 1.25rem;
+  width: 24px;
+}
+
+/* Anchor link overrides ensuring high accessibility visual values */
+.contact-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.contact-link:hover {
+  color: #00ffd1; /* Turns bright teal on hover */
+}
+
+.contact-text {
+  color: #ffffff;
+}
+
+/* Horizontal alignment block displaying social shortcut nodes */
+.social-links {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* Individual modern button link representations for major platforms */
+.social-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: 6px;
+  border: 1px solid rgba(0, 255, 209, 0.3); /* Subtle teal border frame outline */
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+/* Hover highlights prioritizing interactive responsiveness */
+.social-btn:hover {
+  background-color: #1687a7; /* Shifts to mid-teal theme color */
+  transform: translateY(-2px);
+}
+
+/* Mobile responsive media parameters managing flexible stacks */
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column; /* Stack contact info above socials on mobile viewports */
+    gap: 40px;
+  }
+}
+
+
+/* Universal Container Utilities */
+.section-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-title {
+  color: #0f3057;
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin: 0 0 12px 0;
+}
+.section-subtitle {
+  color: #4a5568;
+  font-size: 1.1rem;
+  margin: 0 auto 40px auto;
+  max-width: 700px;
+  line-height: 1.5;
+}
+
+/* 1. Featured Pets Grid Styling */
+.pets-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+.pets-grid {
+  display: flex;
+  gap: 30px;
+}
+.pet-card {
+  flex: 1;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(15, 48, 87, 0.06);
+  border: 1px solid rgba(22, 135, 167, 0.1);
+  position: relative;
+  text-align: left;
+}
+.pet-img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.pet-badge {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+.pet-badge.urgent { background-color: #e53e3e; }
+.pet-badge.ready { background-color: #1687a7; }
+.pet-details { padding: 24px; }
+.pet-details h3 { color: #0f3057; margin: 0 0 4px 0; font-size: 1.5rem; }
+.pet-meta { color: #1687a7; font-weight: 600; font-size: 0.9rem; margin: 0 0 12px 0; }
+.pet-desc { color: #4a5568; line-height: 1.5; margin: 0 0 20px 0; }
+.pet-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #0f3057;
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+.pet-btn:hover { background-color: #1687a7; }
+
+
+
+/* 4. Application Form Styling */
+.form-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+}
+.foster-form {
+  background: #f4f9f9;
+  padding: 40px;
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid rgba(22, 135, 167, 0.15);
+}
+.form-group-row {
+  display: flex;
+  gap: 20px;
+}
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-group label {
+  font-weight: 600;
+  color: #0f3057;
+  margin-bottom: 8px;
+}
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  padding: 12px;
+  border: 1px solid rgba(15, 48, 87, 0.2);
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+}
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  outline: 2px solid #1687a7;
+}
+.submit-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #00ffd1;
+  color: #0f3057;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.submit-btn:hover { background-color: #00e6bd; }
+
+
+/* Container for the unified side-by-side section layout */
+.features-wrapper-section {
+  background-color: #f4f9f9; /* Shared soft, light teal background */
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Flexbox parent managing the two column structures */
+.wrapper-container {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  gap: 50px; /* Space separating the columns */
+}
+
+/* Assigns even width shares to both layout columns */
+.wrapper-column {
+  flex: 1;
+}
+
+/* Ensure titles align nicely at the top left of their zones */
+.wrapper-column .section-title {
+  text-align: left;
+  margin-bottom: 30px;
+  font-size: 2rem;
+}
+
+/* FAQ Layout Overrides */
+.faq-accordion {
+  width: 100%;
+}
+.faq-item {
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.02);
+  border: 1px solid rgba(15, 48, 87, 0.05);
+  overflow: hidden;
+}
+.faq-question {
+  padding: 20px;
+  font-weight: 600;
+  color: #0f3057;
+  cursor: pointer;
+  background: #ffffff;
+}
+.faq-answer {
+  padding: 0 20px 20px 20px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* Support Layout vertical adjustments */
+.support-vertical-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.support-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.02);
+  border-top: 4px solid #1687a7;
+  display: flex;
+  gap: 20px;
+  text-align: left;
+}
+.support-icon { 
+  font-size: 2rem;
+}
+.support-card h3 { color: #0f3057; margin: 0 0 6px 0; font-size: 1.25rem; }
+.support-card p { color: #4a5568; line-height: 1.5; margin: 0 0 12px 0; font-size: 0.95rem; }
+.support-link {
+  color: #1687a7;
+  text-decoration: none;
+  font-weight: 600;
+}
+.support-link:hover { color: #0f3057; }
+
+/* Mobile responsive layout stack fallback rule */
+@media (max-width: 768px) {
+  .wrapper-container {
+    flex-direction: column; /* Stack vertically on small screens */
+    gap: 40px;
+  }
+  .wrapper-column .section-title {
+    font-size: 1.75rem;
+  }
+}
+
+/* ==========================================================================
+   Featured Pets Section Colors
+   ========================================================================== */
+.pets-section {
+  /* Soft, very light blue tint to separate it visually from a pure white section */
+  background-color: #a4daff; 
+  padding: 80px 20px;
+}
+
+.pet-card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  /* Added a subtle deep blue shadow to give cards depth */
+  box-shadow: 0 4px 20px rgba(15, 48, 87, 0.08); 
+  /* Crisp, thin teal border frame */
+  border: 1px solid rgba(22, 135, 167, 0.15); 
+  position: relative;
+  text-align: left;
+}
+
+
+/* ==========================================================================
+   Side-by-Side FAQ & Support Section Colors
+   ========================================================================== */
+.features-wrapper-section {
+  /* Calm, light nature-inspired teal background tint */
+  background-color: #e6f4f8; 
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.faq-item {
+  background: #ffffff;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(15, 48, 87, 0.04);
+  /* Light blue-teal border line to frame the accordion items */
+  border: 1px solid rgba(22, 135, 167, 0.12);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 20px;
+  font-weight: 600;
+  color: #0f3057; /* Deep Trust Blue */
+  cursor: pointer;
+  background: #ffffff;
+  transition: background-color 0.2s ease;
+}
+
+/* Subtle hover interaction color change for the FAQ */
+.faq-question:hover {
+  background-color: #f7fcfd;
+}
+
+.support-card {
+  background: #ffffff;
+  padding: 24px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(15, 48, 87, 0.04);
+  /* Top brand strip accent color */
+  border-top: 4px solid #1687a7; 
+  display: flex;
+  gap: 20px;
+  text-align: left;
+}
+
+
+/* ==========================================================================
+   Application Form Section Colors
+   ========================================================================== */
+.form-section {
+  background-color: #ffffff;
+  padding: 80px 20px;
+}
+
+.foster-form {
+  /* Using a light teal variant background for the form block itself */
+  background-color: #f0f7f9; 
+  padding: 40px;
+  border-radius: 12px;
+  text-align: left;
+  border: 1px solid rgba(22, 135, 167, 0.2);
+}
+
+.form-group input, 
+.form-group select, 
+.form-group textarea {
+  padding: 12px;
+  background-color: #ffffff;
+  /* Deep blue border tint for inputs */
+  border: 1px solid rgba(15, 48, 87, 0.2); 
+  border-radius: 6px;
+  font-family: 'Inter', sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+/* Active field focus color */
+.form-group input:focus, 
+.form-group select:focus, 
+.form-group textarea:focus {
+  outline: none;
+  border-color: #1687a7;
+  box-shadow: 0 0 0 3px rgba(22, 135, 167, 0.15);
+}
+
+
+/* ==========================================================================
+   Events Section Colors
+   ========================================================================== */
+.events-section {
+  /* Alternating back to a clean light background strip */
+  background-color: #ffffff; 
+  padding: 80px 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+.event-card {
+  flex: 1;
+  background-color: #f7fafc; /* Crisp light gray-blue fill */
+  border-radius: 12px;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  border-left: 5px solid #1687a7; /* Mid-Teal accent bar */
+}
+
+
+/* Responsive Grid Stacking Rules */
+@media (max-width: 768px) {
+  .pets-grid, .support-grid, .form-group-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .foster-form { padding: 20px; }
+}

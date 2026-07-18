@@ -6,6 +6,244 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Content goes here -->
+  <!-- Simple Site Header -->
+<header class="main-header">
+  <div class="header-container">
+    <a href="#" class="logo">PetQuest</a>
+  </div>
+</header>
+  <section class="cta-banner">
+  <div class="cta-container">
+    <h1 class="cta-heading">Open Your Heart, Change a Life: Foster a Rescue Pet Today</h1>
+    <p class="cta-description">
+      Every year, thousands of loving animals enter shelters waiting for a second chance. By opening your home to a foster pet, you provide a safe, nurturing environment that prepares them for their forever family while freeing up critical space to save another life.
+    </p>
+    <a href="#" class="cta-button">Start Your Fostering Journey</a>
+  </div>
+</section>
+
+<!-- New Two-Column Pet Info Section -->
+<section class="info-section">
+  <div class="info-container">
+    
+    <!-- Left Column: Pet Image -->
+    <div class="info-column image-column">
+      <img src="img/pet.jpg" alt="A rescue pet waiting for a home" class="info-image">
+    </div>
+    
+    <!-- Right Column: Text Content -->
+    <div class="info-column text-column">
+      <h2 class="info-heading">Why Fostering Matters</h2>
+      <p class="info-text">
+        Fostering is a vital bridge between a rescue animal's past life and their bright future. Many pets struggle in a noisy shelter environment; by welcoming them into a quiet home, you help them decompress, reveal their true personalities, and learn essential socialization skills.
+      </p>
+      <p class="info-text">
+        Whether you can host an animal for a weekend or a few months, your support gives rescue organizations the valuable time and space needed to rescue more animals in danger.
+      </p>
+    </div>
+    
+  </div>
+</section>
+
+<!-- 1. Featured Pets Grid -->
+<section class="pets-section">
+  <div class="section-container">
+    <h2 class="section-title">Rescue Pets Seeking Fosters</h2>
+    <p class="section-subtitle">Meet a few of our lovely residents who are ready to decompress in a nurturing home environment.</p>
+    
+    <div class="pets-grid">
+      <!-- Pet Card 1 -->
+      <div class="pet-card">
+        <div class="pet-badge urgent">Urgent Foster</div>
+        <img src="img/labradorMix.jpg" alt="Bella the dog" class="pet-img">
+        <div class="pet-details">
+          <h3>Bella</h3>
+          <p class="pet-meta">Dog • 2 Years • Labrador Mix</p>
+          <p class="pet-desc">Sweet, energetic, and loves outdoor play. Needs a house with a fenced yard.</p>
+          <a href="#" class="pet-btn">View Profile</a>
+        </div>
+      </div>
+      
+      <!-- Pet Card 2 -->
+      <div class="pet-card">
+        <div class="pet-badge ready">Ready to Match</div>
+        <img src="img/shortHAir.jpg" alt="Milo the cat" class="pet-img">
+        <div class="pet-details">
+          <h3>Milo</h3>
+          <p class="pet-meta">Cat • 5 Months • Domestic Shorthair</p>
+          <p class="pet-desc">A playful, curious kitten who gets along wonderfully with other cats and gentle kids.</p>
+          <a href="#" class="pet-btn">View Profile</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Combined Section Wrapper for Side-by-Side Layout -->
+<section class="features-wrapper-section">
+  <div class="wrapper-container">
+    
+    <!-- Left Column: FAQ Accordion Section -->
+    <div class="wrapper-column faq-column">
+      <h2 class="section-title">Fostering FAQs</h2>
+      
+      <div class="faq-accordion">
+        <div class="faq-item">
+          <div class="faq-question">Who pays for medical care and food?</div>
+          <div class="faq-answer">
+            <p>PetQuest covers 100% of all veterinary approved medical costs, medication, and core supplies including crates and food sheets.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question">Can I foster if I already have personal pets?</div>
+          <div class="faq-answer">
+            <p>Yes! We match foster animals based on your current household dynamic. We will ensure the rescue animal is compatible with your resident pets prior to placement.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right Column: Other Ways to Help (Donations) -->
+    <div class="wrapper-column support-column">
+      <h2 class="section-title">Other Ways You Can Support</h2>
+      
+      <div class="support-vertical-stack">
+        <div class="support-card">
+          <div class="support-icon">🎁</div>
+          <div>
+            <h3>Donate Supplies</h3>
+            <p>Drop off toys, blankets, premium pet food, or view our digital wishlist to ship items directly.</p>
+            <a href="#" class="support-link">View Wishlist →</a>
+          </div>
+        </div>
+        <div class="support-card">
+          <div class="support-icon">💰</div>
+          <div>
+            <h3>Financial Gifts</h3>
+            <p>One-time or recurring contributions fund critical surgeries and emergency healthcare rescues.</p>
+            <a href="#" class="support-link">Donate Online →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- 4. Direct Foster Application Form -->
+<section class="form-section">
+  <div class="form-container">
+    <h2 class="section-title">Start Your Foster Application</h2>
+    <p class="section-subtitle">Fill out this quick questionnaire to help our matching coordinators pair you with the perfect companion.</p>
+    
+    <form class="foster-form">
+      <div class="form-group-row">
+        <div class="form-group">
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" placeholder="John Doe" required>
+        </div>
+        <div class="form-group">
+          <label for="emailaddr">Email Address</label>
+          <input type="email" id="emailaddr" placeholder="john@example.com" required>
+        </div>
+      </div>
+      
+      <div class="form-group">
+        <label for="housing">Housing Environment</label>
+        <select id="housing" required>
+          <option value="">Select housing type...</option>
+          <option value="house-yard">House with Fenced Yard</option>
+          <option value="house-noyard">House (No Yard)</option>
+          <option value="apartment">Apartment / Condo</option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <label for="experience">Prior Pet Experience</label>
+        <textarea id="experience" rows="4" placeholder="Tell us briefly about pets you have owned or fostered in the past..."></textarea>
+      </div>
+      
+      <button type="submit" class="submit-btn">Submit Application</button>
+    </form>
+  </div>
+</section>
+
+
+<!-- New Event Details Section -->
+<section class="events-section">
+  <div class="events-container">
+    <h2 class="events-title">Upcoming Fostering & Adoption Events</h2>
+    <p class="events-subtitle">Join us at our next gathering to meet our wonderful rescues and chat with our experienced foster network.</p>
+    
+    <div class="events-grid">
+      <!-- Event Card 1 -->
+      <div class="event-card">
+        <div class="event-date">
+          <span class="day">25</span>
+          <span class="month">Jul</span>
+        </div>
+        <div class="event-details">
+          <h3 class="event-name">Weekend Adoption Pop-Up</h3>
+          <p class="event-time">10:00 AM - 2:00 PM</p>
+          <p class="event-location">Central Park Community Pavilion</p>
+        </div>
+      </div>
+
+      <!-- Event Card 2 -->
+      <div class="event-card">
+        <div class="event-date">
+          <span class="day">02</span>
+          <span class="month">Aug</span>
+        </div>
+        <div class="event-details">
+          <h3 class="event-name">Foster Orientation Seminar</h3>
+          <p class="event-time">6:30 PM - 8:00 PM</p>
+          <p class="event-location">PetQuest Resource Center & Online</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- New Contact & Social Media Section -->
+<section class="contact-section">
+  <div class="contact-container">
+    
+    <!-- Left Column: Quick Contact Info -->
+    <div class="contact-info">
+      <h2 class="contact-heading">Get in Touch</h2>
+      <p class="contact-subtext">Have questions about fostering, adoption, or volunteering? We'd love to hear from you.</p>
+      
+      <div class="contact-details">
+        <div class="contact-item">
+          <span class="contact-icon">✉</span>
+          <a href="mailto:hello@petquest.org" class="contact-link">hello@petquest.org</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📞</span>
+          <a href="tel:+15557387837" class="contact-link">(555) 738-PETS</a>
+        </div>
+        <div class="contact-item">
+          <span class="contact-icon">📍</span>
+          <span class="contact-text">123 Rescue Way, Hope Valley, CA</span>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Right Column: Social Media Connections -->
+    <div class="contact-social">
+      <h3 class="social-heading">Follow Our Journey</h3>
+      <p class="contact-subtext">Stay updated with daily rescue stories, success updates, and adorable pet pictures.</p>
+      
+      <div class="social-links">
+        <a href="#" class="social-btn facebook">Facebook</a>
+        <a href="#" class="social-btn instagram">Instagram</a>
+        <a href="#" class="social-btn tiktok">TikTok</a>
+      </div>
+    </div>
+    
+  </div>
+</section>
+
 </body>
 </html>
